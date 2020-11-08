@@ -1,6 +1,6 @@
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-PROMPT='[%n@%m %1~$(git_prompt_info)]%# '
+PROMPT='[%n@%m %1~$(git_prompt_info)]%(#.#.$) '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='${return_code}'
 
