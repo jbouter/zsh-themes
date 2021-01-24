@@ -1,8 +1,4 @@
-if [ $(id -u) -eq 0 ]; then
-  PROMPT='%{$fg[yellow]%}%n%{$fg[white]%} in %{$fg[blue]%}%3~%{$reset_color%} $(git_prompt_info)'
-else
-  PROMPT='%{$fg_bold[blue]%}%3~%{$reset_color%} $(git_prompt_info)'
-fi
+PROMPT='%{$fg_bold[blue]%}%3~%{$reset_color%} $(git_prompt_info)'
 
 PROMPT+="%(?:%{$fg_bold[green]%}%#%{$reset_color%} :%{$fg_bold[red]%}%#%{$reset_color%} )"
 
